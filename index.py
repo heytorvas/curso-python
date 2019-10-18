@@ -1000,6 +1000,7 @@
 #     if student <= len(listing) - 1:
 #         print(f'{listing[student][0]}: {listing[student][1]}')
 
+
 # # DICIONARIO EM PYTHON
 # student = dict()
 # student['name'] = str(input('digite o nome do aluno: ')).strip()
@@ -1011,6 +1012,7 @@
 # else:
 #     student['status'] = 'reprovado'
 # print(student)
+
 
 # # JOGO DE DADOS EM PYTHON
 # import random
@@ -1025,6 +1027,7 @@
 # ranking = sorted(game.items(), key=itemgetter(1), reverse=True)
 # print(ranking)
 
+
 # # CARTEIRA DE TRABALHADOR EM PYTHON
 # from datetime import datetime
 # worker = dict()
@@ -1038,6 +1041,7 @@
 #     worker['old'] = worker['age'] + (worker['year'] + 35) - datetime.now().year
 # print(worker)
 
+
 # # CADASTRO DE JOGADOR DE FUTEBOL
 # player = dict()
 # games = list()
@@ -1048,6 +1052,7 @@
 # player['gols'] = games[:]
 # player['total'] = sum(games)
 # print(player)
+
 
 # # UNINDO DICIONARIOS E LISTAS
 # person = dict()
@@ -1071,6 +1076,7 @@
 #         women += 1
 # print('qtd de mulheres cadastradas: {}'.format(women))
 
+
 # # CADASTRO DE JOGADOR DE FUTEBOL
 # player = dict()
 # games = list()
@@ -1088,3 +1094,63 @@
 #         break
 #     games.clear()
 # print(team)
+
+
+# # FUNCAO AREA
+# def area(width, height):
+#     result = width * height
+#     print(result)
+
+# width = float(input('digite a largura: '))
+# height = float(input('digite o comprimento: '))
+# area(width, height)
+
+
+# # PRINT ESPECIAL
+# def write(msg):
+#     print('~'*15)
+#     print(' {} '.format(msg))
+#     print('~'*15)
+
+# write('Hello World!')
+
+
+# # FUNCAO DE CONTADOR
+# def counter(start, end, passer):
+#     if start < end:
+#         count = start
+#         while count <= end:
+#             print(count)
+#             count += passer
+#         print('fim')
+#     else:
+#         count = start
+#         while count >= end:
+#             print(count)
+#             count -= passer
+
+# start = int(input('digite o valor inicial: '))
+# end = int(input('digite o valor final: '))
+# passer = int(input('digite o valor do passo: '))
+# counter(start, end, passer)
+
+
+# # FUNCOES PARA SORTEAR E SOMAR
+# import random
+# def listing(lst):
+#     for i in range(0, 5):
+#         num = random.randint(1, 10)
+#         lst.append(num)
+#     print(lst)
+
+# def evens(lst):
+#     add = 0
+#     for i in lst:
+#         if i % 2 == 0:
+#             add += i
+#     print('soma dos pares: {}'.format(add))
+
+# numbers = list()
+# listing(numbers)
+# evens(numbers)
+help(print)
