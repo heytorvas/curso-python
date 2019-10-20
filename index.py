@@ -1205,3 +1205,35 @@
 #     print(student)
 
 # results(5.5, 2.5, 9, 8.5, situation=True)
+
+
+# # FUNCÕES APROFUNDADAS EM PYTHON
+# def readInt(msg):
+#     while True:
+#         try:
+#             num = int(input(msg))
+#         except ValueError:
+#             print('ERRO - digite um numero inteiro valido')
+#         except Exception as error:
+#             print('erro: {}'.format(error.__class__))
+#         except KeyboardInterrupt:
+#             print('usuario encerrou a operacao')
+#             break
+#         else:
+#             print('o numero inteiro: {}'.format(num))
+#             break
+
+# readInt('digite o numero: ')
+
+
+# # SITE ESTA ACESSIVEL
+# import urllib.request
+# def online_site(url):
+#     try:
+#         urllib.request.urlopen(url)
+#     except urllib.error.URLError:
+#         print('site offline')
+#     else:
+#         print('site online')
+
+# online_site('http://www.pudim.com.br')

@@ -1,0 +1,7 @@
+NAME: heytor | AGE: 18 
+NAME: jaminho | AGE: 25 
+NAME: david | AGE: 19 
+NAME: iml | AGE: 60 
+NAME: naldo | AGE: 27 
+NAME: gospel | AGE: 15 
+NAME: brito | AGE: 8 
