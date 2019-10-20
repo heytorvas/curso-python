@@ -1153,4 +1153,55 @@
 # numbers = list()
 # listing(numbers)
 # evens(numbers)
-help(print)
+
+
+# # FUNCOES PARA VOTACAO
+# from datetime import datetime
+# def votation(year):
+#     age = datetime.now().year - year
+#     if age >= 18:
+#         return 'voto obrigatorio'
+#     elif age >= 16 and age < 18:
+#         return 'voto opcional'
+#     else:
+#         return 'voto negado'
+
+# print(votation(2009))
+
+
+# # FUNCAO PARA FATORIAL
+# import math
+# def factorial(fat, show=False):
+#     if show == False:
+#         print(math.factorial(fat))
+#     else:
+#         c = fat
+#         f = 1
+#         print('{}! = '.format(fat), end='')
+#         while c > 0:
+#             print('{}'.format(c), end='')
+#             print(' x ' if c > 1 else ' = ', end='')
+#             f *= c
+#             c -= 1
+#         print('{}'.format(f))
+
+# factorial(5, True)
+
+
+# # ANALISANDO E GERANDO DICIONARIOS
+# def results(*num, situation=False):
+#     student = dict()
+#     student['qtd'] = len(num)
+#     student['max'] = max(num)
+#     student['min'] = min(num)
+#     student['avg'] = sum(num)/len(num)
+#     if situation == True:
+#         if student['avg'] >= 7.0:
+#             student['situation'] = 'aprovado'
+#         elif student['avg'] >= 5.0 and student['avg'] < 7.0:
+#             student['situation'] = 'recuperacao'
+#         else:
+#             student['situation'] = 'reprovado'
+#     print(student)
+
+# results(5.5, 2.5, 9, 8.5, situation=True)
